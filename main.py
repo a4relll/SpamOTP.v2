@@ -70,7 +70,7 @@ def print_banner() -> None:
         for row in _build_block_rows(_WORD):
             console.print(row, width=width)
     else:
-        console.print("SPAMSCAM", style="bold white")
+        console.print("SPAMMER BY ARCXELYS / OTP SPAM TOOL", style="bold")
     console.print()
     console.print("SPAMSCAM / OTP SPAM TOOL", style="bold")
     console.print("Multi-provider · Rotating cycle · Auto cooldown", style="muted")
