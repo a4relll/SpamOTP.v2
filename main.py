@@ -32,7 +32,8 @@ _BLOCK_GLYPHS: dict[str, tuple[str, ...]] = {
     "M": ("███╗   ███╗", "████╗ ████║", "██╔████╔██║", "██║╚██╔╝██║", "██║ ╚═╝ ██║", "╚═╝     ╚═╝"),
     "C": (" ██████╗", "██╔════╝", "██║     ", "██║     ", "╚██████╗", " ╚═════╝"),
 }
-_WORD = "SPAMMER BY ARCXELYS"
+# Tetap gunakan SPAMSCAM agar logo ASCII art tidak error
+_WORD = "SPAMSCAM"
 
 THEME = Theme(
     {
@@ -70,9 +71,11 @@ def print_banner() -> None:
         for row in _build_block_rows(_WORD):
             console.print(row, width=width)
     else:
-        console.print("SPAMMER BY ARCXELYS / OTP SPAM TOOL", style="bold")
+        console.print("SPAMSCAM", style="bold white")
     console.print()
-    console.print("SPAMSCAM / OTP SPAM TOOL", style="bold")
+    
+    # Judul yang sudah diubah menjadi namamu
+    console.print("SPAMMER BY ARCXELYS / OTP SPAM TOOL", style="bold")
     console.print("Multi-provider · Rotating cycle · Auto cooldown", style="muted")
     console.print()
 
